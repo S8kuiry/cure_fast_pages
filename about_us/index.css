@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    height: 100%;
+  }
+  
+  .about_us {
+    width: 100%;
+    background: linear-gradient(#516fff);
+    background-color: #516fff;
+    padding-top: 30px;
+  }
+  
+  /* ------------------------ About Us Content ---------------------------- */
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+  
+  .abt-left {
+    width: 60%;
+    padding: 20px;
+    color: #2e2e52;
+  }
+  
+  .abt-left h2 {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .abt-left p {
+    color: #dedede;
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+  
+  .abt-left p:hover {
+    text-shadow: 0px 0px 10px 0px  black;
+    cursor: pointer;
+  }
+  
+  .abt-right {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .abt-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* ------------------- Navbar ------------------- */
+  .navbar {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .navbar .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+  }
+  
+  .navbar .links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  
+  .navbar .links a:hover {
+    background-color: whitesmoke;
+    color: #516fff;
+    border-radius: 50px;
+    transition: 0.4s;
+  }
+  
+  /* ------------------ Footer ------------------- */
+  .footer {
+    width: 100%;
+    height: 55vh;
+    background: linear-gradient(90deg, #0a1300 0%, #001e0f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.f-up {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.f-col {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    color: whitesmoke;
+    margin: 15px 25px;
+    height: 80%;
+}
+
+#col_2 {
+    margin-left: 260px;
+}
+
+.f-col h6:hover {
+    transform: translateX(7px);
+    transition: 0.5s;
+}
+
+.f-down {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 150px;
+}
+/*------------------------- top sidebar -------------------------*/
+#bars,#bar{
+  display: none;
+  font-size: 30px;
+}
+
+.sidebar{
+  width:100%;
+  position: fixed;
+  top:0;
+  height:0px;
+  background-color: black;
+  z-index: 1;
+  visibility: hidden;
+  padding:20px;
+}
+.s_links{
+  width:100%;
+  height:100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+}
+.s_links a{
+  text-decoration: none;
+  color:whitesmoke;
+  height: 40px;
+  width: auto;
+  border-radius: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:10px ;
+  padding:10px;
+  
+}
+.s_links a:hover{
+  background-color: whitesmoke;
+  color: #516fff;
+  transition:0.3s;
+
+}
+/* ----------------------------media queries -----------------------*/
+@media screen and (max-width: 600px) {
+  #bars,#bar{
+    color: whitesmoke;
+    display: block;
+    font-size: 30px;
+  }
+  #bars{
+    display: none;
+  }
+  .navbar{
+    justify-content: space-between;
+    
+  }
+  .navbar .links{
+    justify-content: center;
+
+  }
+  .navbar .links a{
+    display: none;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .abt-left{
+    width:100%;
+    justify-content: center;
+  }
+  .abt-right{
+    width:100%;
+    justify-content: center;
+  }
+  .footer{
+    
+    width:100%;
+    height:600px;
+    position:relative;
+    bottom: 0;
+  }
+  .f-up{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px;
+
+  }
+  #col_2, #col_1,#col_3{
+    margin:15px 0px;
+  }
+  .f-down{
+    justify-content: flex-start;
+    width:100%;
+    text-align: left;
+  }
+  
+}

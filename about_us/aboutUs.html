@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CURE FAST</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+  <!-- Sidebar-->
+  <div class="sidebar">
+    <i id="bars" class="fa-solid fa-bars"></i>
+    <div class="s_links">
+      <a href="../index.html">Home</a>
+      <a href="../about_us/aboutUs.html">About Us</a>
+      <a href="../privacy_policy/privacy.html">Privacy Policy</a>
+      <a href="../terms_conditions/Terms_Conditions.html">Terms & Conditions</a>
+    </div>
+
+
+
+
+
+  </div>
+  <div class="about_us">
+    <!-- Navbar -->
+
+    <div class="navbar">
+      <img src="../assets/curefast-logo-alt.png" class="nav-logo" width="180px" />
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="../about_us/aboutUs.html">About Us</a>
+        <a href="../privacy_policy/privacy.html">Privacy Policy</a>
+        <a href="../terms_conditions/Terms_Conditions.html">Terms & Conditions</a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- About Us Content -->
+    <div class="content">
+      <div class="abt-left">
+        <h2>About Us</h2>
+        <p>CureFast is more than just a delivery service; we're a part of your community. We care about your health and
+          well-being, and we're committed to providing a convenient and reliable way to access the medications you need.
+          We believe that everyone deserves access to quality healthcare, and we're proud to play a role in making that
+          a reality. Our team is dedicated to providing friendly, personalized service and building lasting
+          relationships with our customers.</p>
+      </div>
+      <div class="abt-right">
+        <img src="../assets/takeaway.png" alt="Medicine Delivery" class="abt-image" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="f-up">
+      <div class="f-col" id="col_1">
+        <img src="../assets/curefast-logo-alt.png" class="f-logo" width="180px" />
+        <a href="https://curefast.in/#" style="text-decoration: none;">
+          <h3 style="color: whitesmoke;">15 minutes medicine delivery</h3>
+        </a>
+      </div>
+
+      <div class="f-col" id="col_2">
+        <h2>Quick Links</h2>
+        <h6>About Us</h6>
+        <h6>Privacy Policy</h6>
+        <h6>Terms & Conditions</h6>
+      </div>
+
+      <div class="f-col" id="col_3">
+        <h2>Contact Us</h2>
+        <h6>+91 86173 42857</h6>
+        <h6>info@curefast.in</h6>
+      </div>
+    </div>
+    <hr style="color: whitesmoke; height: 2px; background-color: whitesmoke; width: 90%">
+    <div class="f-down">
+      <h5 style="color: whitesmoke;">Currently live in Central Calcutta</h5>
+    </div>
+  </footer>
+  <script>
+    let sbar = document.querySelector(".sidebar")
+    let bars = document.querySelector("#bars")
+    let bar = document.querySelector("#bar")
+
+
+
+    let d = 0;
+    bars.addEventListener('click', () => {
+      if (d === 0) {
+        sbar.style.opacity = "1";
+        sbar.style.visibility = "visible";
+        sbar.style.height = "310px"; // adjust height
+        sbar.style.transition = "0.4s"; // immediate visibility change after opacity transition
+        d = 1;
+      } else {
+        sbar.style.opacity = "0";
+        sbar.style.visibility = "hidden";
+        sbar.style.height = "0px"; // adjust height
+        sbar.style.transition = "0.4s"; // immediate visibility change after opacity transition
+        d = 0;
+      }
+    });
+  
+    // Close sidebar when clicking the bar icon in navbar
+    bar.addEventListener('click', () => {
+      if (d === 0) {
+        sbar.style.opacity = "1";
+        sbar.style.visibility = "visible";
+        sbar.style.height = "310px";
+        bars.style.display = "block"
+        sbar.style.transition = "0.4s";
+        d = 1;
+      } else {
+        sbar.style.opacity = "0";
+        sbar.style.visibility = "hidden";
+        sbar.style.height = "0px";
+        bars.style.display = "none"
+        
+        sbar.style.transition = "0.4s";
+        d = 0;
+      }
+    });
+
+  </script>
+
+  <script src="index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
